@@ -1,1 +1,3 @@
 # Capslock-On-Mac
+将windows版上基于AutoHotKey的capslock+的配置方案
+在mac上用karabiner中的个人配置来实现,其中是配置的简单代码
