@@ -1,0 +1,487 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>F19 to F19</name>
+        <appendix>(F19 to Hyper (ctrl+shift+cmd+opt) + F19 Only, send escape)</appendix>
+        <identifier>private.f192f19_escape</identifier>
+        <autogen>
+            --KeyOverlaidModifier--
+            KeyCode::F19,
+            KeyCode::COMMAND_L,
+            ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            <!-- KeyCode::ESCAPE -->
+            <!-- 上一行代码令只按cpaslock触发ESCAPE键,暂时注释掉 -->
+
+        </autogen>
+    </item>
+
+    <item>
+        <name>Hyper D to Down</name>
+        <appendix>(Hyper-J to Down arrow)</appendix>
+        <identifier>private.hyper-d-down</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::D,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::CURSOR_DOWN,
+
+        </autogen>
+    </item>
+
+    <item>
+        <name>Hyper B to Down 5 Row</name>
+        <appendix>(Hyper-D to Down 5 arrow)</appendix>
+        <identifier>private.hyper-b-down</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::B,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::CURSOR_DOWN,
+            KeyCode::CURSOR_DOWN,
+            KeyCode::CURSOR_DOWN,
+            KeyCode::CURSOR_DOWN,
+            KeyCode::CURSOR_DOWN,
+        </autogen>
+    </item>
+
+    <item>
+        <name>Hyper M to Select Down 5 Row</name>
+        <appendix>(Hyper-M to Select Down 5 arrow)</appendix>
+        <identifier>private.hyper-m-down</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::M,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::CURSOR_DOWN,
+            ModifierFlag::SHIFT_L,
+            KeyCode::CURSOR_DOWN,
+            ModifierFlag::SHIFT_L,
+            KeyCode::CURSOR_DOWN,
+            ModifierFlag::SHIFT_L,
+            KeyCode::CURSOR_DOWN,
+            ModifierFlag::SHIFT_L,
+            KeyCode::CURSOR_DOWN,
+            ModifierFlag::SHIFT_L,
+        </autogen>
+    </item>
+
+    <item>
+        <name>Hyper Y to Up 5 Row</name>
+        <appendix>(Hyper-Y to Down 5 arrow)</appendix>
+        <identifier>private.hyper-y-down</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::Y,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::CURSOR_UP,
+            KeyCode::CURSOR_UP,
+            KeyCode::CURSOR_UP,
+            KeyCode::CURSOR_UP,
+            KeyCode::CURSOR_UP,
+        </autogen>
+    </item>
+
+    <item>
+        <name>Hyper 0 to select Up 5 Row</name>
+        <appendix>(Hyper-Y to select Down 5 arrow)</appendix>
+        <identifier>private.hyper-0-down</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::0,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::CURSOR_UP,
+           	ModifierFlag::SHIFT_L,  
+            KeyCode::CURSOR_UP,
+            ModifierFlag::SHIFT_L,
+            KeyCode::CURSOR_UP,
+            ModifierFlag::SHIFT_L,
+            KeyCode::CURSOR_UP,
+            ModifierFlag::SHIFT_L,
+            KeyCode::CURSOR_UP,
+            ModifierFlag::SHIFT_L,
+        </autogen>
+    </item>
+
+
+    <item>
+        <name>Hyper E to Up</name>
+        <appendix>(Hyper-K to Up arrow)</appendix>
+        <identifier>private.hyper-E-up</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::E,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::CURSOR_UP
+             <!-- 此为更换的目标键 -->
+        </autogen>
+    </item>
+
+ 
+    <item>
+        <name>Hyper S to Left</name>
+        <appendix>(Hyper-H to Left arrow)</appendix>
+        <identifier>private.hyper-s-left</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::S,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::CURSOR_LEFT
+        </autogen>
+    </item>
+
+    <item> 
+        <name>Hyper A to Jump Left a Word</name>
+        <appendix>(Hyper-A to jump left word)</appendix>
+        <identifier>private.hyper-a-left</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::A,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::CURSOR_LEFT,
+            ModifierFlag::OPTION_L 
+        </autogen>
+    </item>
+
+    <item> 
+        <name>Hyper G to Jump Right a Word</name>
+        <appendix>(Hyper-G to jump right a word)</appendix>
+        <identifier>private.hyper-g-left</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::G,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::CURSOR_RIGHT,
+            ModifierFlag::OPTION_L 
+        </autogen>
+    </item>
+
+    <item>
+        <name>Hyper F to Right</name>
+        <appendix>(Hyper-L to Right arrow)</appendix>
+        <identifier>private.hyper-f-right</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::F,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::CURSOR_RIGHT,
+
+        </autogen>
+    </item>
+
+    <item> 
+        <name>Hyper H to Slect Left a Word</name>
+        <appendix>(Hyper-H to select left a word)</appendix>
+        <identifier>private.hyper-h-left</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::H,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::CURSOR_LEFT,
+            ModifierFlag::OPTION_L |
+            ModifierFlag::SHIFT_L 
+        </autogen>
+    </item>
+
+    <item> 
+        <name>Hyper N to Slect Right a Word</name>
+        <appendix>(Hyper-N to select right a word)</appendix>
+        <identifier>private.hyper-n-left</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::N,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::CURSOR_RIGHT,
+            ModifierFlag::OPTION_L |
+            ModifierFlag::SHIFT_L 
+        </autogen>
+    </item>
+
+    <item>
+        <name>Hyper I to Shift plus Up</name>
+        <appendix>(Hyper-I to shift Up arrow)</appendix>
+        <identifier>private.hyper-I-up</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::I,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::CURSOR_UP,
+            ModifierFlag::SHIFT_L 
+        </autogen>
+    </item>
+
+    <item>
+        <name>Hyper K to Shift plus down</name>
+        <appendix>(Hyper-I to shift down arrow)</appendix>
+        <identifier>private.hyper-k-up</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::K,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::CURSOR_DOWN,
+            ModifierFlag::SHIFT_L 
+        </autogen>
+    </item>
+    <item>
+        <name>Hyper J to Shift Left</name>
+        <appendix>(Hyper-H to Left arrow)</appendix>
+        <identifier>private.hyper-J-left</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::J,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::CURSOR_LEFT,
+            ModifierFlag::SHIFT_L |
+        </autogen>
+    </item>	
+
+    <item>
+        <name>Hyper L to Shift plus Right</name>
+        <appendix>(Hyper-L to Right arrow)</appendix>
+        <identifier>private.hyper-l-right</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::L,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::CURSOR_RIGHT,
+			ModifierFlag::SHIFT_L |
+        </autogen>
+    </item>
+    <item>
+        <name>Hyper U select to Beginning of Line</name>
+        <appendix>(Hyper-U to Beginning of Line)</appendix>
+        <identifier>private.hyper-U-beginning-of-line</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::U,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::CURSOR_LEFT,
+            ModifierFlag::COMMAND_L
+            | ModifierFlag::SHIFT_L
+        </autogen>
+    </item>
+
+    <item>
+        <name>Hyper O select to End of Line</name>
+        <appendix>(Hyper-O to End of Line)</appendix>
+        <identifier>private.hyper-O-selectEnd-of-line</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::O,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::CURSOR_RIGHT,
+            ModifierFlag::COMMAND_L
+            | ModifierFlag::SHIFT_L
+        </autogen>
+    </item>
+
+    <item>
+        <name>Hyper ; to End of Line</name>
+        <appendix>(Hyper-; to End of Line)</appendix>
+        <identifier>private.hyper-;-end-of-line</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::SEMICOLON,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::CURSOR_RIGHT,
+            ModifierFlag::COMMAND_L
+        </autogen>
+    </item>
+    <item>
+        <name>Hyper P to head of sentence</name>
+        <appendix>(Hyper-P to head of sentence)</appendix>
+        <identifier>private.hyper-p-head</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::P,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::CURSOR_LEFT,
+            ModifierFlag::COMMAND_L
+        </autogen>
+    </item>
+    <item>
+        <name>Hyper M to Bottom</name>
+        <appendix>(Hyper-M to Bottom)</appendix>
+        <identifier>private.hyper-m-bottom</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::M,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::CURSOR_DOWN,
+            ModifierFlag::COMMAND_L
+        </autogen>
+    </item>
+    <item>
+        <name>Hyper + Space To Capslock</name>
+        <appendix>Hyper(cmd+ctrl+shift+opt)+space, send Capslock</appendix>
+        <identifier>private.hyperspace2enter</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::SPACE, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+            KeyCode::CAPSLOCK
+        </autogen>
+    </item>
+
+	<item>
+        <name>Hyper + W to Backspace</name>
+        <appendix>Hyper+R to Delete</appendix>
+        <identifier>private.hypeW</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::W,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::DELETE,
+        </autogen>
+    </item>
+
+    <item>
+        <name>Hyper + Backspace to Delete whole row</name>
+        <appendix>Hyper+backspace to Delete</appendix>
+        <identifier>private.hyperBackspace</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::DELETE,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            
+            KeyCode::CURSOR_RIGHT,
+            ModifierFlag::COMMAND_L,
+            KeyCode::DELETE,
+            ModifierFlag::COMMAND_L
+        </autogen>
+    </item>
+    <item>
+        <name>Hyper + R to Delete</name>
+        <appendix>Hyper+R to Delete</appendix>
+        <identifier>private.hypeR</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::R,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::FORWARD_DELETE,
+        </autogen>
+    </item>
+
+	<item>
+        <name>Hyper + Q to Shift Row</name>
+        <appendix>Hyper + enter to shift Row whereever you are</appendix>
+        <identifier>private.hype-Enter</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::Q,
+            <!-- 这里使用enter键无法工作,别的键好使,有时间去寻找原因 -->
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::CURSOR_RIGHT,
+            ModifierFlag::COMMAND_L,
+            KeyCode::ENTER,
+
+
+            
+        </autogen>
+    </item>
+
+    <item>
+        <name>Hyper + 9 to ()</name>
+        <appendix>Hyper + 9 to ()</appendix>
+        <identifier>private.hype-9</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::9,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::9,
+            ModifierFlag::SHIFT_L,
+            KeyCode::0,
+            ModifierFlag::SHIFT_L,
+            KeyCode::CURSOR_LEFT,
+        </autogen>
+    </item>
+
+
+    <item>
+        <name>Hyper + [ to {}</name>
+        <appendix>Hyper + [] to {}</appendix>
+        <identifier>private.hype-BRACKET_RIGHT</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::BRACKET_LEFT,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::BRACKET_LEFT,
+            ModifierFlag::SHIFT_L,
+            KeyCode::BRACKET_RIGHT,
+            ModifierFlag::SHIFT_L,
+            KeyCode::CURSOR_LEFT,
+        </autogen>
+    </item>
+
+    <item>
+        <name>Hyper + " to "" </name>
+        <appendix>Hyper + [] to {}</appendix>
+        <identifier>private.hype-quote</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::QUOTE,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::QUOTE,
+            ModifierFlag::SHIFT_L,
+            KeyCode::QUOTE,
+            ModifierFlag::SHIFT_L,
+            KeyCode::CURSOR_LEFT,
+        </autogen>
+    </item>
+
+    <item>
+        <name>Hyper + comma to low and great </name>
+        <appendix>Hyper + low to low and great </appendix>
+        <identifier>private.hype-minus</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::COMMA,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::COMMA,
+            ModifierFlag::SHIFT_L,
+            KeyCode::DOT,
+            ModifierFlag::SHIFT_L,
+            KeyCode::CURSOR_LEFT,
+        </autogen>
+    </item>
+
+    <item>
+        <name>Hyper + c to copy </name>
+        <appendix>Hyper c  to copy  </appendix>
+        <identifier>private.hype-c</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::C,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::C,
+            ModifierFlag::COMMAND_L,
+        </autogen>
+    </item>
+
+
+    <item>
+        <name>Hyper + v to paste </name>
+        <appendix>Hyper v  to paste  </appendix>
+        <identifier>private.hype-v</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::V,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::V,
+            ModifierFlag::COMMAND_L,
+        </autogen>
+    </item>
+    <item>
+        <name>Hyper + x to cut </name>
+        <appendix>Hyper x  to cut  </appendix>
+        <identifier>private.hype-x</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::X,
+            ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::X,
+            ModifierFlag::COMMAND_L,
+        </autogen>
+    </item>
+
+
+
+</root>
